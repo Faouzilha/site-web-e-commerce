@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-02-12T12:04:57.294556" rpa="false" schemaversion="5">
+<suite id="s1" name="Siteweb-Ecommerce-For-Testing" source="C:\Users\formation\Desktop\siteweb-ecommerce-for-testing">
+<suite id="s1-s1" name="AuthentificationOKUtilisateur" source="C:\Users\formation\Desktop\siteweb-ecommerce-for-testing\AuthentificationOKUtilisateur.robot">
+<test id="s1-s1-t1" name="robotframework-testing_selenium" line="28">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:04:57.581448" level="INFO">Opening browser 'edge' to base url 'http://127.0.0.1:5000/'.</msg>
+<arg>http://127.0.0.1:5000/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-12T12:04:57.581448" elapsed="3.971299"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${SELSPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-02-12T12:05:01.554100" elapsed="0.000000"/>
+</kw>
+<arg>Open Browser</arg>
+<arg>http://127.0.0.1:5000/</arg>
+<arg>${BROWSER}</arg>
+<arg>AND</arg>
+<arg>Set Selenium Speed</arg>
+<arg>${SELSPEED}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-02-12T12:04:57.581448" elapsed="3.972652"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-12T12:05:01.568792" elapsed="0.167847"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-12T12:05:03.740656" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-12T12:05:01.737683" elapsed="2.002973"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:03.884184" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot1.png"&gt;&lt;img src="screenshot1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-12T12:05:03.740656" elapsed="0.143528"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:03.889533" level="INFO">Clicking element 'link=Login'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:03.884184" elapsed="0.167661"/>
+</kw>
+<arg>link=Login</arg>
+<status status="PASS" start="2024-02-12T12:05:03.884184" elapsed="0.167661"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:04.059313" level="INFO">Clicking element 'id=username'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:04.058720" elapsed="0.068071"/>
+</kw>
+<arg>id=username</arg>
+<status status="PASS" start="2024-02-12T12:05:04.051845" elapsed="0.074946"/>
+</kw>
+<kw name="type">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:04.133351" level="INFO">Typing text 'faouzilha' into text field 'id=username'.</msg>
+<arg>${element}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:04.133351" elapsed="0.082679"/>
+</kw>
+<arg>id=username</arg>
+<arg>${USER}</arg>
+<status status="PASS" start="2024-02-12T12:05:04.130403" elapsed="0.085627"/>
+</kw>
+<kw name="type">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:04.216030" level="INFO">Typing text 'faouzilha' into text field 'id=password'.</msg>
+<arg>${element}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:04.216030" elapsed="0.174304"/>
+</kw>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-02-12T12:05:04.216030" elapsed="0.179293"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:04.398457" level="INFO">Clicking element 'id=submit'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:04.398457" elapsed="0.385067"/>
+</kw>
+<arg>id=submit</arg>
+<status status="PASS" start="2024-02-12T12:05:04.397753" elapsed="0.385771"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:04.955619" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot2.png"&gt;&lt;img src="screenshot2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-12T12:05:04.783524" elapsed="0.172862"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:04.978773" level="INFO">Current page contains text 'Success! You are logged in as: faouzilha'.</msg>
+<arg>Success! You are logged in as: ${USER}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-12T12:05:04.957120" elapsed="0.021653"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:05.017569" level="INFO">Element 'xpath=//*[@class='alert alert-success']' is displayed.</msg>
+<arg>xpath=//*[@class='alert alert-success']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-12T12:05:04.981798" elapsed="0.036187"/>
+</kw>
+<kw name="Count Items in Catalog">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.019298" level="INFO">${total_items} = 0</msg>
+<var>${total_items}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.019298" elapsed="0.000000"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:05.031192" level="INFO">${items_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_26")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement...</msg>
+<var>${items_elements}</var>
+<arg>xpath=//body/div[@class="row"]/div[@class="col-8"]/table/tbody/tr/td[1]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.019298" elapsed="0.011894"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.031192" level="INFO">${total_items} = 1</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_26")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.031192" level="INFO">${total_items} = 2</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_27")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.031192" level="INFO">${total_items} = 3</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_28")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.031192" level="INFO">${total_items} = 4</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_29")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.039631" level="INFO">${total_items} = 5</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_30")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.008439"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.039631" level="INFO">${total_items} = 6</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_31")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.039631" level="INFO">${total_items} = 7</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_32")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.039631" level="INFO">${total_items} = 8</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_33")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.039631" level="INFO">${total_items} = 9</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_34")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.045221" level="INFO">${total_items} = 10</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.005871"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_35")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.039631" elapsed="0.005871"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.046664" level="INFO">${total_items} = 11</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.046664" elapsed="0.001002"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_36")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.045502" elapsed="0.002164"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.048666" level="INFO">${total_items} = 12</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.047666" elapsed="0.001000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_37")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.047666" elapsed="0.001000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.049664" level="INFO">${total_items} = 13</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.048666" elapsed="0.000998"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_38")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.048666" elapsed="0.000998"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.049664" level="INFO">${total_items} = 14</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.049664" elapsed="0.000991"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_39")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.049664" elapsed="0.001316"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.051890" level="INFO">${total_items} = 15</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.050980" elapsed="0.000910"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_40")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.050980" elapsed="0.000910"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.052567" level="INFO">${total_items} = 16</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.052567" elapsed="0.000627"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_41")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.051890" elapsed="0.001304"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.054286" level="INFO">${total_items} = 17</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.053771" elapsed="0.000515"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_42")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.053771" elapsed="0.000515"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.055353" level="INFO">${total_items} = 18</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.054830" elapsed="0.000523"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_43")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.054830" elapsed="0.000523"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.055862" level="INFO">${total_items} = 19</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.055862" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_44")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.055353" elapsed="0.001024"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.056953" level="INFO">${total_items} = 20</msg>
+<var>${total_items}</var>
+<arg>${total_items} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.056377" elapsed="0.000576"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="78e33dff609d144370dc243d310b9c29", element="213E51C3254DDE49FE902183CB83993B_element_45")&gt;</var>
+<status status="PASS" start="2024-02-12T12:05:05.056377" elapsed="0.000576"/>
+</iter>
+<var>${element}</var>
+<value>@{items_elements}</value>
+<status status="PASS" start="2024-02-12T12:05:05.031192" elapsed="0.025761"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.056953" level="INFO">Nombre total d'items dans le catalog: 20</msg>
+<arg>Nombre total d'items dans le catalog: ${total_items}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.056953" elapsed="0.000727"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.057680" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${total_items}</arg>
+<arg>20</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.057680" elapsed="0.000000"/>
+</kw>
+<tag>catalog item nb</tag>
+<doc>Vérifie le nombre item=${total_items}</doc>
+<status status="PASS" start="2024-02-12T12:05:05.019298" elapsed="0.038382"/>
+</kw>
+<kw name="Achat User OK">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:05.080395" level="INFO">${prix} = 3,000 $</msg>
+<var>${prix}</var>
+<arg>xpath=//tbody/tr[1]/td[3]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.057680" elapsed="0.023038"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${prix}</arg>
+<arg>3,000 $</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.080718" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2024-02-12T12:05:05.080718" level="INFO">${prix} = 3000 $</msg>
+<var>${prix}</var>
+<arg>${prix}</arg>
+<arg>,</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.080718" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2024-02-12T12:05:05.080718" level="INFO">${prix} = 3000 </msg>
+<var>${prix}</var>
+<arg>${prix}</arg>
+<arg>$</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.080718" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Number" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.080718" level="INFO">${prix} = 3000.0</msg>
+<var>${prix}</var>
+<arg>${prix}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.080718" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:05.100381" level="INFO">${credit_avant} = 10,000 $</msg>
+<var>${credit_avant}</var>
+<arg>xpath=//body/nav/div/ul[@class='navbar-nav'][1]/li[@class='nav-item'][1]/a[@class='nav-link'][1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.080718" elapsed="0.019663"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${credit_avant}</arg>
+<arg>10,000 $</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.100381" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2024-02-12T12:05:05.100381" level="INFO">${credit_avant} = 10000 $</msg>
+<var>${credit_avant}</var>
+<arg>${credit_avant}</arg>
+<arg>,</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.100381" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2024-02-12T12:05:05.100381" level="INFO">${credit_avant} = 10000 </msg>
+<var>${credit_avant}</var>
+<arg>${credit_avant}</arg>
+<arg>$</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.100381" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Number" owner="BuiltIn">
+<msg time="2024-02-12T12:05:05.100381" level="INFO">${credit_avant} = 10000.0</msg>
+<var>${credit_avant}</var>
+<arg>${credit_avant}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.100381" elapsed="0.000000"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:05.100381" level="INFO">Clicking element 'xpath=(.//*[normalize-space(text()) and normalize-space(.)='Info'])[1]/following::button[1]'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.100381" elapsed="0.041422"/>
+</kw>
+<arg>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Info'])[1]/following::button[1]</arg>
+<status status="PASS" start="2024-02-12T12:05:05.100381" elapsed="0.041422"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-12T12:05:07.141963" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-12T12:05:05.141803" elapsed="2.000160"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:07.141963" level="INFO">Clicking element 'id=submit'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:07.141963" elapsed="0.206374"/>
+</kw>
+<arg>id=submit</arg>
+<status status="PASS" start="2024-02-12T12:05:07.141963" elapsed="0.206374"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-12T12:05:09.349091" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-12T12:05:07.348337" elapsed="2.000754"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:09.381987" level="INFO">${credit_apres} = 7,000 $</msg>
+<var>${credit_apres}</var>
+<arg>xpath=//body/nav/div/ul[@class='navbar-nav'][1]/li[@class='nav-item'][1]/a[@class='nav-link'][1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.349091" elapsed="0.032896"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${credit_apres}</arg>
+<arg>7,000 $</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.381987" elapsed="0.000000"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2024-02-12T12:05:09.381987" level="INFO">${credit_apres} = 7000 $</msg>
+<var>${credit_apres}</var>
+<arg>${credit_apres}</arg>
+<arg>,</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.381987" elapsed="0.015688"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2024-02-12T12:05:09.398826" level="INFO">${credit_apres} = 7000 </msg>
+<var>${credit_apres}</var>
+<arg>${credit_apres}</arg>
+<arg>$</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.397675" elapsed="0.001151"/>
+</kw>
+<kw name="Convert To Number" owner="BuiltIn">
+<msg time="2024-02-12T12:05:09.398826" level="INFO">${credit_apres} = 7000.0</msg>
+<var>${credit_apres}</var>
+<arg>${credit_apres}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.398826" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-12T12:05:09.398826" level="INFO">${resultat_attendu} = 7000.0</msg>
+<var>${resultat_attendu}</var>
+<arg>${credit_avant} - ${prix}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.398826" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<arg>${credit_apres}</arg>
+<arg>${resultat_attendu}</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.398826" elapsed="0.004535"/>
+</kw>
+<status status="PASS" start="2024-02-12T12:05:05.057680" elapsed="4.345681"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-12T12:05:11.404047" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-12T12:05:09.403361" elapsed="2.000686"/>
+</kw>
+<kw name="Count Items in Cart After">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-12T12:05:11.404047" level="INFO">${total_items_cart} = 0</msg>
+<var>${total_items_cart}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-12T12:05:11.404047" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:11.441840" level="INFO">${cart_item} = IPhone 15</msg>
+<var>${cart_item}</var>
+<arg>xpath=//body/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/h5</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:11.404047" elapsed="0.037793"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${cart_item}</arg>
+<arg>IPhone 15</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-02-12T12:05:11.441840" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-12T12:05:11.404047" elapsed="0.037793"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-12T12:05:13.442523" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-12T12:05:11.441840" elapsed="2.000683"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T12:05:13.446777" level="INFO">Clicking element 'link=Logout'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T12:05:13.442523" elapsed="0.171120"/>
+</kw>
+<arg>link=Logout</arg>
+<status status="PASS" start="2024-02-12T12:05:13.442523" elapsed="0.171529"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-12T12:05:13.614052" elapsed="2.699086"/>
+</kw>
+<doc>Vérifie que le message de connexion est affiché sur la page</doc>
+<tag>connexion</tag>
+<status status="PASS" start="2024-02-12T12:04:57.581448" elapsed="18.731690"/>
+</test>
+<status status="PASS" start="2024-02-12T12:04:57.325243" elapsed="18.987895"/>
+</suite>
+<status status="PASS" start="2024-02-12T12:04:57.294556" elapsed="19.018582"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">connexion</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Siteweb-Ecommerce-For-Testing">Siteweb-Ecommerce-For-Testing</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="AuthentificationOKUtilisateur">Siteweb-Ecommerce-For-Testing.AuthentificationOKUtilisateur</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-12T12:04:57.547076" level="ERROR">Error in file 'C:\Users\formation\Desktop\siteweb-ecommerce-for-testing\AuthentificationOKUtilisateur.robot' on line 3: Importing library 'DatabaseLibrary' failed: ModuleNotFoundError: No module named 'DatabaseLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\formation\Desktop\siteweb-ecommerce-for-testing\lib
+  C:\Users\formation\Desktop\siteweb-ecommerce-for-testing\resources
+  c:\Users\formation\.vscode\extensions\d-biehl.robotcode-0.73.3\bundled\libs
+  c:\Users\formation\.vscode\extensions\d-biehl.robotcode-0.73.3\bundled\tool\robotcode
+  C:\Program Files\Python312\python312.zip
+  C:\Program Files\Python312\DLLs
+  C:\Program Files\Python312\Lib
+  C:\Program Files\Python312
+  C:\Users\formation\AppData\Roaming\Python\Python312\site-packages
+  C:\Program Files\Python312\Lib\site-packages</msg>
+</errors>
+</robot>
